@@ -6,18 +6,27 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden !important;
+    background-color: hsla(0, 4%, 85%, 0.37);
 }
 
 /* global */
+.main_container{
+    width: 100%;
+    background-color: white     ;
+}
+.main_container_1{
+    height: 100vh;
+}
 .wrapper{
     width: 85%;
     margin: auto;
+    /* height: 100vh; */
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 ul{
     display: flex;
@@ -61,6 +70,8 @@ nav ul img{
     display: flex;
     padding: 100px 0;
     align-items: center;
+    width: 85%;
+    margin: auto;
 }
 .text{
     width: 50%;
@@ -90,8 +101,9 @@ nav ul img{
     margin-top: 20px;
 }
 .section_2{
-    position: relative;
     width: 100%;
+    position: relative;
+    top: -70px;
 }
 .sec{
     display: flex;
@@ -126,8 +138,11 @@ nav ul img{
     font-size: 18px;
     background-color: hsl(180, 66%, 49%);
 }
+.section_3{
+    /* height: 100px; */
+}
 .section_3_header{
-    margin-top: 150px;
+    margin-top: 60px;
     text-align: center;
 }
 .section_3_header h1{
@@ -135,10 +150,173 @@ nav ul img{
 }
 .section_3_header p{
     color: hsl(0, 0%, 75%);
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 20px 0;
+    letter-spacing: 0.8px;
+}
+.cards{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+.card_1{
+    width: 400px;
+    /* height: 100%; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 30px 80px 30px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+    z-index: 3;
+}
+.card_2{
+    width: 400px;
+    /* height: 100%; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 30px 80px 30px;
+    height: 300px;
+    position: relative;
+    /* left: 400px; */
+    top: 100px;
+    z-index: 3;
+}
+.card_3{
+    width: 400px;
+    /* height: 100%; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 30px 80px 30px;
+    position: relative;
+    /* right: 0; */
+    top: 150px;
+    height: 300px;
+    /* margin-bottom: 100px; */
+    z-index: 3;
+}
+
+.card_1 h4, .card_2 h4 , .card_3 h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.card_1 p, .card_2 p , .card_3 p{
+    font-size: 18px;
+    padding-bottom: 10px;
     font-weight: 500;
     line-height: 1.5;
 }
+.chain{
+    position: relative;
+    /* left: -75px; */
+    top: 200px;
+    width: 100px;
+    height: 20px;
+    background-color: hsl(180, 66%, 49%);
+    z-index: 1;
+}
+.chain_1{
+    position: relative;
+    /* left: -75px; */
+    top: 250px;
+    width: 100px;
+    height: 20px;
+    background-color: hsl(180, 66%, 49%);
+    z-index: 1;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1631888454/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-brand-recognition_ovadzr.svg);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+}
+.icon_1{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1631888454/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-detailed-records_yvuiqf.svg);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+}
+.icon_2{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1631888450/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-fully-customizable_vytnmd.svg);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+}
 
+/* footer */
+.section_4{
+    width: 100%;
+    margin-top: 200px;
+}
+.sec_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/devking/image/upload/v1631888454/URL%20shortening%20API%20landing%20page%20challenge%20hub/bg-boost-desktop_nkah17.svg);
+    background-size: 100%;
+    background-position: center;
+    background-color: hsl(257, 27%, 26%);
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+.sec_1 h1{
+    color: white;
+    font-size: 44px;
+}
+/* footer */
+footer{
+    background-color: hsl(260, 8%, 14%);
+}
+.footer{
+    display: flex;
+   justify-content: space-between;
+   padding: 60px 0;
+   align-items: flex-start;
+   color: white;
+}
+.logo{
+    width: 20%;
+}
+.quicklinks{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.features p, .resources p, .company p{
+    padding: 7px 0;
+}
+.features p a:hover, .resources p a:hover, .company p a:hover{
+    color: hsl(180, 66%, 49%);
+}
+.media{
+    padding: 0 10px;
+}
+.shortly h1{
+    color: white;
+}
 
 
 /* Mobile View */
@@ -213,6 +391,14 @@ nav ul img{
     .image{
         width: 70%;
     }
+    .wrapper{
+        width: 95%;
+    }
+    .sec_1{
+        background-size: cover;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -230,6 +416,24 @@ nav ul img{
     }
     .start{
         display: block;
+    }
+    .card_1, .card_2, .card_3{
+        padding: 70px 15px 15px 15px;
+    }
+    .icon, .icon_1, .icon_2{
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        background-size: 40px;
+        top: -30px;
+    }
+    .card_1 h4, .card_2 h4, .card_3 h4{
+        padding-bottom: 7px;
+        font-size: 16px;
+    }
+    .card_1 p, .card_2 p, .card_3 p{
+        padding-bottom: 7px;
+        font-size: 16px;
     }
 }
 
@@ -275,6 +479,42 @@ nav ul img{
         width: 70%;
         margin: 10px;
     }
+    .cards{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_2{
+        margin-top: -90px;
+    }
+    .card_3{
+        margin-top: -55px;
+    }
+    .icon, .icon_1, .icon_2{
+        left: 165px;
+        /* margin: auto; */
+    }
+    .chain{
+        position: relative;
+        /* left: -75px; */
+        top: 50px;
+        width: 17px;
+        height: 130px;
+        background-color: hsl(180, 66%, 49%);
+        z-index: 1;
+    }
+    .chain_1{
+        position: relative;
+        /* left: -75px; */
+        top: 80px;
+        width: 17px;
+        height: 100px;
+        background-color: hsl(180, 66%, 49%);
+        z-index: 1;
+    }
+    .section_4{
+        margin-top: 1100px;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -287,4 +527,15 @@ nav ul img{
    .shorten{
         width: 90%;
    }
+   .card_1, .card_2, .card_3{
+       width: 290px;
+   }
+   .sec_1{
+    height: 35vh;
+
+   }
+    .icon, .icon_1, .icon_2{
+        left: 110px;
+        /* margin: auto; */
+    }
 }
