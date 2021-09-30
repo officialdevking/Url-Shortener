@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="main_container" class="main_container">
@@ -19,12 +20,12 @@
             <nav>
                 <ul>
                     <img src="https://res.cloudinary.com/devking/image/upload/v1631888451/URL%20shortening%20API%20landing%20page%20challenge%20hub/logo_ya3tni.svg" alt="#">
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Resources</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Login</a></li>
+                    <li><a href="#">Login</a></li>
                     <li><button class="sign">Sign Up</button></li>
                     <li id="hamburger" class="hamburger"><i class="fas fa-bars"></i></li>
                 </ul>
@@ -33,9 +34,9 @@
             <div id="medium_nav" class="medium_nav animate__animated animate__fadeInRight">
                 <ul>
                     <li id="cancel"><i class="fas fa-times-circle"></i></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Resources</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
                 <div class="horizontal"></div>
                 <ul>
@@ -80,6 +81,18 @@
                 <div class="sec">
                     <input type="text" id="main_link" class="input_1" placeholder="Shorten a link here...">
                     <button id="shorten" class="shorten">Shorten It!</button> 
+                    <button class="buttonload"><i class="fa fa-spinner fa-spin"></i>Loading</button>
+                </div>
+                <div id="output" class="output_1">
+                    <div class="long">
+                        <p class="long_url"></p>
+                    </div>
+                    <div class="short">
+                        <p class="short_url"></p>
+                        <button id="copy" class="copy">copy</button>
+                        <button class="copied">copied!</button>
+                        <!-- <input class="inputElement" type="text"> -->
+                    </div>
                 </div>
             </div>
     
@@ -129,26 +142,26 @@
                 </div>
         
                 <div class="quicklinks">
-                    <div class="features">
+                    <div class="qlink features">
                         <h4>Features</h4>
                         <p><a href="#">Link Shortening</a></p>
                         <p><a href="#">Branded Links</a></p>
                         <p><a href="#">Analytics</a></p>
                     </div>
-                    <div class="resources">
+                    <div class="qlink resources">
                         <h4>Resources</h4>
                         <p><a href="#">Blog</a></p>
                         <p><a href="#">Developers</a></p>
                         <p><a href="#">Support</a></p>
                     </div>
-                    <div class="company">
+                    <div class="qlink company">
                         <h4>Company</h4>
                         <p><a href="#">About</a></p>
                         <p><a href="#">Our Team</a></p>
                         <p><a href="#">Careers</a></p>
                         <p><a href="#">Contact</a></p>
                     </div>
-                    <div class="social_icons">
+                    <div class="qlink social_icons">
                         <img src="https://res.cloudinary.com/devking/image/upload/v1631888452/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-facebook_xahw9c.svg" alt="#" class="media">
                         <img src="https://res.cloudinary.com/devking/image/upload/v1631888451/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-twitter_xqhy2r.svg" alt="#" class="media">
                         <img src="https://res.cloudinary.com/devking/image/upload/v1631888450/URL%20shortening%20API%20landing%20page%20challenge%20hub/icon-pinterest_hcfxg3.svg" alt="#" class="media">
